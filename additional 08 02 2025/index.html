@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+
+    //    "Чому у завданні:
+    //
+    //    #Hdjws7E
+    //    Використовуючи данні з масиву, за допомоги document.write та циклу
+    //    побудувати структуру по шаблону
+    //    Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
+    //
+    //    let products = [
+    //        {
+    //            title: 'milk',
+    //            price: 22,
+    //            image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+    //        },
+    //        {
+    //            title: 'juice',
+    //            price: 27,
+    //            image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+    //        },
+    //        {
+    //            title: 'tomato',
+    //            price: 47,
+    //            image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+    //        },
+    //        {
+    //            title: 'tea',
+    //            price: 15,
+    //            image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+    //        },
+    //    ];
+    //
+    //    ШАБЛОН
+    //    <div class=""product-card"">
+    //    <h3 class=""product-title"">TITLE. Price - PRICE</h3>
+    //    <img src=""IMAGE"" alt="""" class=""product-image"">
+    //    </div>
+    //    Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
+    //
+    //
+    //    Чому в цьому завданні коректно використовувати лише for of а не вкладений for of та for in.
+    //
+    //    for of віддає нам об'єкт а for in значення, але це не працює в даному випадку, пробувала ось такий код, видавало помилку:
+    //
+    //
+    //
+    //    for(let product of products){
+    //        for(let item in product){
+    //            document.write(`<div class=""product-card"">
+    //                   <h3 class=""product-title""> ${product[item]} Price - ${product[item]}</h3>
+    //                   <img src=""${product[item]}""  class=""product-image"" alt=""image"">
+    //
+    //</div>`)
+    //        }
+    //    }"
+
+
+    //     let products = [
+    //         {
+    //             title: 'milk',
+    //             price: 22,
+    //             image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+    //         },
+    //         {
+    //             title: 'juice',
+    //             price: 27,
+    //             image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+    //         },
+    //         {
+    //             title: 'tomato',
+    //             price: 47,
+    //             image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+    //         },
+    //         {
+    //             title: 'tea',
+    //             price: 15,
+    //             image: 'https://www.assamicaagro.in/cdn/shop/articles/Untitled_design_26_1200x1200.png?v=1592799889'
+    //         },
+    //     ];
+    //
+    //
+    //     for (let product of products) {
+    //
+    //
+    //         let titleValue = '';
+    //         let priceValue = '';
+    //         let imageValue = '';
+    //
+    //         for (let key in product) {
+    //             if (key === 'title') {
+    //                 titleValue = product[key];
+    //             }
+    //             if (key === 'price') {
+    //                 priceValue = product[key];
+    //             }
+    //             if (key === 'image') {
+    //                 imageValue = product[key];
+    //             }
+    //         }
+    //
+    //         document.write(`<div class="product-card">
+    //                    <h3 class="product-title"> ${titleValue} Price - ${priceValue}</h3>
+    //                    <img src="${imageValue}"  class="product-image" alt="image">
+    //
+    // </div>`);
+    //     }
+
+
+    // console.log(5 === '5'); // false
+    // console.log(5 == '5'); // true || '5' == '5' => 101010 === 101010
+
+
+    // "Як правильно оголошувати змінні для циклів, в циклі чи за його межами?
+
+    // Якщо змінна оголошена в тілі циклу ,то як її поведінка відрізняється від змінної
+    //     яка створена за межами циклу, наприклад просто заверху над циклом?
+    //     Коли варто застосовувати той,  чи інший метод оголошення?"
+
+
+    // for (const user of users) {
+    // let stat = !user.status;
+    // console.log(stat)
+    // }
+    // чому тут в лог падають якось не коректно хто фолс хто тру
+
+
+    // "1. В яких випадках який краще цикл використовувати найбільше цікавить ""while/do-while""?
+    // all for of | for | while | for in |
+    // 2.З chat gpt  дізнався про такий цикл як ""forEach"", Чому його немає в списку з іншими циклами, і як ним маніпулювати?"
+
+
+    // Моє запитанян стосується 2 додаткового завдання до 3 уроку суть самого завдання вивести конструкцію задопомогою цикла та стилізувати її щоб було по 2 обєкта в рядку, стосовно виводу питань немає проблема виникла при спробі стилізувати об'єкти за допомогою грідів так щоб вони стали в 2 колононки цього зробити не можу як я не пробував , можливо є якійсь інший спосіб або можливо я допустив помилку в коді (пробував огортати і сам скріпт дівом нічого не змінилося)
+
+    // debugger;
+    // let users = [
+    //     {name: 'vasya', age: 31, status: false},
+    //     {name: 'petya', age: 30, status: true},
+    //     {name: 'kolya', age: 29, status: true},
+    //     {name: 'olya', age: 28, status: false},
+    //     {name: 'max', age: 30, status: true},
+    //     {name: 'anya', age: 31, status: false},
+    //     {name: 'oleg', age: 28, status: false},
+    //     {name: 'andrey', age: 29, status: true},
+    //     {name: 'masha', age: 30, status: true},
+    //     {name: 'olya', age: 31, status: false},
+    //     {name: 'max', age: 31, status: true}
+    // ];
+    //
+    // for (const user of users) {
+    //     let stat = !user.status;
+    //     console.log(stat);
+    // }
+
+    // console.log(true && true); // true
+    // console.log(true && false); // false
+    // console.log(false && true); // false
+    //
+    // console.log(true || true); // true
+    // console.log(true || false); // true
+    // console.log(false || true); // true
+    // console.log(false || false); // false
+
+
+    const obj = {}; //!@#$%
+    obj.id = 1; // !@#$%
+    console.log(obj) // {id:1}
+
+    const PI = 3.1415;
+
+
+</script>
+
+</body>
+</html>
