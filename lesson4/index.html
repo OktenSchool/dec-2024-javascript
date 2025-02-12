@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // Поясніть наступний момент:
+    // ви зробили функцію з rest argument з назвою asd, як ви вивели елемент за допомогою "console.log(Array.isArray(x))".
+    // Поясніть цей синтаксис. Звідки програма розуміє що Array - це наш масив?
+    //     function foobar(a, ...asd) { // 11,[22,33,44]
+    //         // console.log(Array.isArray(asd)) // true
+    //         for (const x of asd) {
+    //             if (Array.isArray(x)) {
+    // //...
+    //             }
+    //         }
+    //     }
+    //
+    //     debugger;
+    //     //     a  [  asd  ]
+    //     foobar(11, 22, 33, 44)
+
+
+    // "#0Kxco1edSN
+    // - створити функцію яка створює ul з  елементами li.
+    // Текст li задати через аргумент всім однаковий.
+    // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) та виводить його через document.write
+    //
+    // не зрозуміло як тут цикл створює кількість, хоч бийте
+    // function ulWithLiCreator(text, counter) {
+    //     document.write(`<ul>`);
+    //     for (let i = 0; i < counter; i++) {
+    //         document.write(`<li>${text} ${i}</li>`);
+    //     }
+    //     document.write(`</ul>`);
+    // }
+    //
+    // ulWithLiCreator('hekki', 10);
+
+
+    // З приводу обмінника - геть туго зрозуміла навіть з рішення, можемо пройти ще раз? Збивають з пантелику об'єкти в аргументах: по-перше їх було два, а пішли як один аргумент; по-друге - як з ними було попрацьовано
+
+
+    // function exchange(sum, currencyValues, exchangeCurrency) {
+    //     for (const item of currencyValues) {
+    //         if (item.currency === exchangeCurrency) {
+    //             return sum / item.value;
+    //         }
+    //     }
+    //     // throw new Error('Exchange Error');
+    //     return 'someajshgdajhgjh ';
+    //
+    // }
+    //
+    // let result = exchange(10000, [
+    //     {currency: 'USD', value: 42},
+    //     {currency: 'EUR', value: 45}],
+    // 'EUR');
+
+    // В завданні з функцією swap(arr, index1, index2),
+    // Я викоростав конструкцію [arr[index1], arr[index2]] = [arr[index2], arr[index1]].
+    // Схожу конструкцію я бачив в python тільки там через tuple робиться.
+    // Чи коректна така конструкція чи краще використовувати тимчасову змінну?
+
+
+    // Чи можу я завжди використовувати ` ` замість " ", ' '  на що це впливає?
+    // let x = 'sahfdhasgfd';
+    // console.log(`${x}`);
+
+
+    // "
+    // можеш ще раз пояснити на тему 'Змінна arguments у функціях' ?
+    //     навіщо вона необхідна і чи є вона не замінною (якоюсь іншою функцією)?"
+
+    // function foo() {
+    //     console.log(arguments);
+    // }
+    // foo(11,22,33);
+
+    // "1. Чи можна додавати функції в функції до бескінечності? це не перевантажить?
+    // Якщо функцій дуже багато, то їх формують в бібліотеки, вірно?
+
+    // 2. Функції можуть бути також вмонтовані по замовчуванню?
+
+    //     3. Питання до першої лекції про функціїю.
+    //     У функції було задано відобразити об'єкти масиву, але return задано не було і вона все одно працювала (повернула значення), тому що там задано console.log(item)?
+    //
+    // function printerArray(array) {
+    //     for (const item of array) {
+    //         console.log(item);
+    //     }
+    // }
+
+    // 4. Якщо якусь змінну винести за дію функції,// тобто  сферу дії { },
+    // то функція не буде до неї звертатись, правильно?  "
+
+    // Що таке чиста функція? Якщо можна на прикладі
+    // let a = 100;
+    //
+    // function calculate(b) {
+    //     return a + b;
+    // }
+    //
+    // calculate(100); // 200
+    // calculate(100); //200
+    // a = 0;
+    // calculate(100); // 100
+
+
+    //     "Мне сложно правильно выстроить структуру HTML в document.write(). Особенно не понимаю, как корректно вставлять div, h1, img, чтобы код оставался читаемым и работал правильно. Например, вот такой шаблон:
+    //
+    //     document.write(`
+    //     <div class=""product-card"">
+    //         <h3 class=""product-title"">${products[xx].title}. Price - ${products[xx].price}</h3>
+    //         <img src=""${products[xx].image}"" alt=""${products[xx].title}"" class=""product-image"">
+    //     </div>
+    // `);
+    //
+    //
+    //     Можете подсказать, как лучше оформлять такие конструкции и как избежать ошибок в document.write()?"""
+
+    let x = 'hekki';
+    document.write(`<div>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, soluta.</p>
+</div>`);
+
+</script>
+
+</body>
+</html>
