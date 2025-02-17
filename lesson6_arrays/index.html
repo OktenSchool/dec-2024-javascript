@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // "1. Розкажіть про метод localeCompare. (Кращий чи гірший?)
+    // 'asdqwe'.localeCompare('asdqwe', "ua");
+    // 2. Чи вже використовують нові методи, наприклад toSorted(). (Як вони себе зарекомендували?)
+    // 3. Необов'язковий параметр thisArg таких методів як map, filter... потрібен для прив'язки контексту this? (щось я тут до кінця не розібрався)"
+    // [].map(value => value.toString(),[11,22,33,44]);
+
+
+    // Не можу зрозуміти чому в 9 завданні остання команда видає мені всі картки 'clubs' а не ті що більші за 9. Навіть підглянув в розв'язок і все одно не розумію в чому проблема. Добавив Git
+
+
+    // Поясніть будь ласка ще раз .reduce() Дуже тяжко для мене зрозуміти як він працює, чого потребує і що віддає
+
+    // [11,22,33,44,55,66,77,88] -> {odd:[11,33,55,77],even:[22,44,66,88]}
+
+    // // [11,22,33]->66
+    // console.log([1123, 22432, 33].reduce((accumulator, itemOfArray) => {
+    //     return accumulator + itemOfArray;
+    // }, 0));
+    //
+    // // [{value:33},{value:33},{value:33}]->{value:99}
+    // console.log([{value: 33}, {value: 33}, {value: 33}].reduce((accumulator, itemOfArray) => {
+    //     accumulator.result = accumulator.result + itemOfArray.value;
+    //     return accumulator
+    // }, {result: 0}));
+
+    // [11,22,33,44,55,66,77,88] -> {odd:[11,33,55,77],even:[22,44,66,88]}
+
+
+    // Чи правильно буде сказати, що основна різниця між map та forEach в тому, що forEach змінює основний масив,
+    // а map повертає новий масив того самого розміру  з результатом відпрацювання функції, при цьомк не змінюючи основний масив?
+
+
+    // "/ - створити функцію sortNums(array,direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
+    //     let nums = [11,21,3];
+    // sortNums(nums,'ascending') // [3,11,21]
+    // sortNums(nums,'descending') // [21,11,3]
+
+    // написав такий код але не спрацювало
+
+    // let nums = [11, 21, 3]
+    // function sort(array,direction) {
+    //     for ( let arr of array ) {
+    //         if( direction === 'ascending') {
+    //             return arr.sort((a,b) => a-b)
+    //         }else if( direction === 'descending') {
+    //             return arr.sort((a,b) => b-a)
+    //         }
+    //     }
+    // }
+    // потім через відео побачив що треба було без цикла а чому? ми ж маємо перебрати всі елементи в масиві чи ні"
+
+
+
+</script>
+
+</body>
+</html>
